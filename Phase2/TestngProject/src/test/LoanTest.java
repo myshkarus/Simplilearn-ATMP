@@ -21,5 +21,4 @@ public class LoanTest extends BaseClass {
 	public void PersonalLoanTest1() {
 		System.out.println("Inside Personal Loan Test 1");
 	}
-
 }
