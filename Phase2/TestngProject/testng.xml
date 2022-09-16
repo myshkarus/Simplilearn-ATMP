@@ -6,6 +6,7 @@
 			<class name="test.CartTest" />
 			<class name="test.LoanTest">
 				<methods>
+				    <include name="HomeLoanTest" />
 					<include name="PersonalLoan.*" />
 					<exclude name="PersonalLoanTest1" />
 				</methods>
