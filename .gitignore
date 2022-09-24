@@ -23,7 +23,8 @@
 hs_err_pid*
 replay_pid*
 
-chromedriver
+# Chrome driver (disabled for Jenkins GitHub job)
+# chromedriver
 
 
 # Eclipse Gradle plugin generated files
