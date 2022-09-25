@@ -2,6 +2,7 @@
 package testcases;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -12,6 +13,8 @@ import org.openqa.selenium.WebElement;
 
 
 import pages.LoginPage;
+
+@Listeners(ListenerExample.class)
 
 public class SimplilearnLoginTest extends BaseClass {
 
@@ -27,7 +30,7 @@ public class SimplilearnLoginTest extends BaseClass {
 		WebElement Error = driver.findElement(By.id("msg_box"));
 		
 		String ActualError = Error.getText();
-		String ExpectedError = "The email or password you have entered is invalid.";
+		String ExpectedError = "The email or password you have entered is invalid"; //Add error
 
 		Assert.assertTrue(Error.isDisplayed());
 		Assert.assertEquals(ActualError, ExpectedError);

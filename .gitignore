@@ -96,3 +96,6 @@ local.properties
 
 # TestNG test-output folder
 **/test-output/**
+
+# Ignore screenshots
+*.png
