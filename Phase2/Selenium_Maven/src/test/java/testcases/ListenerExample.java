@@ -32,7 +32,7 @@ public class ListenerExample extends BaseClass implements ITestListener {
 		TakesScreenshot tsObj= (TakesScreenshot) BaseClass.driver;
 		File file = tsObj.getScreenshotAs(OutputType.FILE);
 		try {
-			FileUtils.copyFile(file, new File("screenshot.png"));
+			FileUtils.copyFile(file, new File(result.getName() + ("_screenshot.png")));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

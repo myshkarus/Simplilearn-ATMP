@@ -99,3 +99,7 @@ local.properties
 
 # Ignore screenshots
 *.png
+
+# Ignore html reports
+*.html
+
