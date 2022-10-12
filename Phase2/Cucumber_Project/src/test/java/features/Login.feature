@@ -15,7 +15,7 @@ Feature: Login Feature Scenario
     And I click on the Login button
     Then I should get the error message "The email or password you have entered is invalid."
 
-  @sanity
+  #@sanity
   Scenario: This scenario is to define the failure path
     When I enter the username as "abc@xyz.com" and password as "Abc@1234"
     And I click on the Login button

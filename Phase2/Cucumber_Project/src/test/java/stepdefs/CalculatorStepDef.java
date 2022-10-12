@@ -1,6 +1,8 @@
 
 package stepdefs;
 
+import java.util.List;
+
 import org.junit.Assert;
 
 import io.cucumber.java.en.Given;
@@ -10,7 +12,7 @@ import io.cucumber.java.en.When;
 
 public class CalculatorStepDef {
 
-	int result;
+	int result = 0;
 
 	@Given("I have a calculator")
 	public void i_have_a_calculator() {
@@ -33,11 +35,11 @@ public class CalculatorStepDef {
 		Assert.assertEquals(expResult, result);
 	}
 	
-	
-	@Then("I should get the result as <result>")
-	public void i_should_get_the_result_as_result() {
-	    // Write code here that turns the phrase above into concrete actions
-	
+	@When("I add below numbers")
+	public void i_add_below_numbers(List<Integer> numbers) {
+		for (Integer num: numbers) {
+			result += num;
+		}	
 	}
 
 }
