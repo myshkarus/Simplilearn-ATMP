@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
                  features = "src/test/java/features", 
                  glue = "stepdefs", 
                  //tags = {"@sanity or @regression" }
-                 tags = {"@sanity" }
+                 tags = {"@sanity"}
 )
 
 public class TestRunner {
